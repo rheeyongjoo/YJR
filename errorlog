@@ -1,0 +1,26 @@
+cd source && make
+make[1]: Entering directory '/u/osiris-master/source'
+fatal: your current branch 'master' does not have any commits yet
+
+##############################################################################
+
+-- Note: Certain compiler warnings have been suppressed.
+--       If you feel these warnings might help debug a particularly
+--       occult issue, look at the file: ./source/config.mk.warnings
+
+##############################################################################
+
+Creating build directory
+[F90] os-stringutil.f90
+[CC] os-sys-multi-c.c
+[F03] os-sys-multi.f03
+system/os-sys-multi.f03:903.19:
+
+  use, intrinsic :: ieee_arithmetic
+                   1
+Fatal Error: Can't find an intrinsic module named 'ieee_arithmetic' at (1)
+Makefile:108: recipe for target 'build/os-sys-multi.o' failed
+make[1]: *** [build/os-sys-multi.o] Error 1
+make[1]: Leaving directory '/u/osiris-master/source'
+Makefile:14: recipe for target 'all' failed
+make: *** [all] Error 2
